@@ -7,7 +7,7 @@ const Home = () =>{
 
     useEffect(()=>{
         const fetchWorkouts = async () =>{
-            const response = await fetch("http://localhost:4000/api/workouts")
+            const response = await fetch("https://workout-buddy-api-3kq2.onrender.com/api/workouts")
             const data = await response.json()
             
             if(response.ok){

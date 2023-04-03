@@ -2,7 +2,7 @@ import formatDistanceToNow from "date-fns/formatDistanceToNow"
 
 const WorkoutDetails = ({workout}) =>{
     const handleClick = async () =>{
-        const res = await fetch("http://localhost:4000/api/workouts/"+workout._id,{
+        const res = await fetch("https://workout-buddy-api-3kq2.onrender.com/api/workouts/"+workout._id,{
             method: 'DELETE',
         })
 
